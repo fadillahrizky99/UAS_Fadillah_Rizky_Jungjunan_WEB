@@ -1,0 +1,280 @@
+@font-face {
+    font-family: poppins;
+    src: url(/font/Poppins-Regular.ttf);
+}
+body{
+    font-family: poppins;
+    margin: 0;
+}
+.header{
+    height: 100px;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: space-between;
+    
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1480px;
+}
+.logo img{
+    width: 100px;
+}
+nav{
+    margin: auto;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+    font-size: 26px;
+    display: inline-block;
+    overflow-x: hidden;
+    font-weight: bold;
+}
+nav ul li hr{
+    margin: 0;
+    color: #000;
+    background-color: #000;
+    height: 2px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.active{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    transition: 0.2s;
+}
+.nav{
+    width: 100%;
+    margin-left: -100%;
+    border: none;
+}
+.nav_active{
+    width: 100%;
+    margin-left: 0;
+    border: none;
+}
+.conten{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: space-between;
+    height: 450px;
+}
+.desc h1{
+    font-size: 80px;
+    margin : 0;
+}
+.desc p{
+    font-size: 36px;
+    margin : 0;
+}
+.my_img img{
+    max-width: 479px;
+}
+.porto p{
+    padding: 0 5px;
+    display: inline;
+    font-size: 36px;
+    margin-bottom: 0;
+    border: solid 3px #000;
+}
+.porto hr{
+    margin: 0;
+    color: #000;
+    background-color: #000;
+    height: 2px;
+}
+.porto img{
+    margin-top: 20px;
+    width: 100%;
+    border: solid 3px #000;
+}
+.footer{
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: space-between;
+}
+.logo_fot img{
+    width: 100px;
+}
+.copy_right p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.copy_right{
+    margin: auto;
+}
+.sub_judul{
+    margin: 50px 0px 0px 0px;
+}
+.form{
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.05);
+}
+.form h1{
+    font-size: 26px;
+}
+.pendaftaran{
+    width: 95%;
+}
+.form table tr td{
+    padding-bottom: 30px;
+}
+.label{
+    width: 20%;
+}
+.in{
+    width: 80%;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: #000 1px solid;
+}
+.submit{
+    display: flex;
+    justify-content: end;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.daftar_mahasiswa {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+.daftar_mahasiswa th, .daftar_mahasiswa td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.daftar_mahasiswa th {
+    background-color: #f2f2f2;
+}
+.daftar_mahasiswa tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.btn_tbh{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btn_del{
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+    .conten{
+        display: block;
+        height: 100%;
+    }
+    .desc p{
+        font-size: 32px;
+    }
+    .my_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .my_img img{
+        margin-top: 50px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .porto{
+        margin-top: 50px;
+    }
+    .porto img{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .mahasiswa{
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 830px){
+    nav ul li{
+        font-size: 20px;
+    }
+    .desc h1{
+        font-size: 60px;
+    }
+    .logo_fot{
+        display: none;
+    }
+    .footer{
+        align-content: center;
+    }
+    .form h1{
+        font-size: 20px;
+    }
+    .sub_judul{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 75px;
+    }
+    .logo{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 546px){
+    .desc h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 362px){
+    .desc h1{
+        font-size: 40px;
+    }
+    .desc p{
+        font-size: 25px;
+    }
+}
